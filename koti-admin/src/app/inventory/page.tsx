@@ -41,7 +41,8 @@ import {
 } from "lucide-react";
 import { PRODUCTS as INITIAL_PRODUCTS } from "@/lib/koti-db";
 
-import { db } from "../../../shared/firebase";
+import { db } from "@/lib/firebase"; // ✅ THIS WORKS WITH VERCEL
+
 import { 
   collection, 
   onSnapshot, 
