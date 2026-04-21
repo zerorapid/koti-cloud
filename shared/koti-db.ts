@@ -104,15 +104,17 @@ export const RIDERS = [
 
 export const LIVE_ORDERS = [
   {
-    id: 'ORD-TEST-1',
-    customer: 'Jayapal Reddy',
-    items: ['Sync Test Product x 1'],
-    total: 99,
-    status: 'In Progress',
+    id: 'ORD-9921',
+    customer: 'Arjun Mehta',
+    items: [{ name: 'Organic Milk', qty: 2, price: 75 }],
+    total: 330,
+    status: 'Processing',
+    riderId: 'R-1',
     rider: 'Rajesh M.',
-    time: 'Just Now'
+    time: '12 mins ago'
   }
 ];
+
 
 export const ORDERS = LIVE_ORDERS;
 
