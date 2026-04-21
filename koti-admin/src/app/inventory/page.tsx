@@ -390,7 +390,7 @@ function ProductEditor({ product, onClose, onSave }: any) {
                            className="flex-1 px-4 py-3 bg-muted/20 border border-input rounded-lg text-[13px] font-bold focus:border-primary outline-none transition-all" 
                         />
                         {idx > 0 && (
-                          <button onClick={() => setFormData(prev => ({ ...prev, images: prev.images.filter((_, i) => i !== idx) }))} className="p-3 text-red-500 hover:bg-red-50 rounded-lg">
+                          <button onClick={() => setFormData(prev => ({ ...prev, images: prev.images.filter((_: any, i: number) => i !== idx) }))} className="p-3 text-red-500 hover:bg-red-50 rounded-lg">
                              <Trash2 size={16} />
                           </button>
                         )}
