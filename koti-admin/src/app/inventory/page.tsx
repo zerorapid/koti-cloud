@@ -39,9 +39,10 @@ import {
   PlusCircle,
   MinusCircle
 } from "lucide-react";
-import { PRODUCTS as INITIAL_PRODUCTS } from "@/lib/koti-db";
+import { PRODUCTS as INITIAL_PRODUCTS } from "../../lib/koti-db";
 
 import { db } from "../../lib/firebase";
+
 
 
 import { 
