@@ -111,7 +111,7 @@ export default function SettingsPage() {
                       <FormGroup label="Dark Store Locations" type="number" defaultValue="8" />
                       <FormGroup label="Current App Version" defaultValue="2.4.1" disabled />
                    </div>
-                   <ToggleItem label="Maintenance Mode (Disable User Orders)" checked={config.maintenanceMode} onChange={(val) => setConfig({...config, maintenanceMode: val})} />
+                   <ToggleItem label="Maintenance Mode (Disable User Orders)" checked={config.maintenanceMode} onChange={(val: boolean) => setConfig({...config, maintenanceMode: val})} />
                 </Card>
                 <StickyFooter onSave={() => showToast("General settings saved successfully!")} />
              </div>

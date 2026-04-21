@@ -106,15 +106,42 @@ export const LIVE_ORDERS = [
   {
     id: 'ORD-9921',
     customer: 'Arjun Mehta',
-    items: [{ name: 'Organic Milk', qty: 2, price: 75 }],
+    items: [
+      { name: 'Organic Milk', qty: 2, price: 75 },
+      { name: 'Red Apples', qty: 1, price: 180 }
+    ],
     total: 330,
     status: 'Processing',
     riderId: 'R-1',
     rider: 'Rajesh M.',
-    time: '12 mins ago'
+    payment: 'UPI (Paid)',
+    time: '12 mins ago',
+    timeline: [
+      { time: '12:42 PM', stage: 'Order Placed', completed: true },
+      { time: '12:45 PM', stage: 'Picked by Rider', completed: true },
+      { time: '12:50 PM', stage: 'En Route', completed: true },
+      { time: '--', stage: 'Delivery', completed: false }
+    ]
+  },
+  {
+    id: 'ORD-9922',
+    customer: 'Rahul Verma',
+    items: [
+      { name: 'Fresh Banana', qty: 3, price: 80 }
+    ],
+    total: 240,
+    status: 'Delivered',
+    riderId: 'R-1',
+    rider: 'Rajesh M.',
+    payment: 'COD',
+    time: '1 hour ago',
+    timeline: [
+      { time: '11:15 AM', stage: 'Order Placed', completed: true },
+      { time: '11:20 AM', stage: 'Picked by Rider', completed: true },
+      { time: '11:45 AM', stage: 'Delivered', completed: true }
+    ]
   }
 ];
-
 
 export const ORDERS = LIVE_ORDERS;
 
