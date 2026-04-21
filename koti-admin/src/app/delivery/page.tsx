@@ -38,7 +38,8 @@ export default function DeliveryPage() {
   const deliveries = useMemo(() => {
     return ORDERS.map(order => ({
       ...order,
-      rider: RIDERS.find(r => r.id === order.riderId) || RIDERS[0],
+      rider: RIDERS.find(r => r.id === order.rider) || RIDERS[0],
+
       distance: "2.4 km",
       progress: order.status === 'Processing' ? 0.35 : (order.status === 'Delivered' ? 1 : 0),
       speed: 0.005,
